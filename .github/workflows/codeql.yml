@@ -27,6 +27,7 @@ jobs:
     - run: |
          echo "deleting old build"
          rm -rf build/ **/*.so
+         pip3 install torch torchvision torchaudio
    
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
